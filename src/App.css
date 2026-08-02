@@ -1,0 +1,65 @@
+.app-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.end-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background: rgba(13, 4, 30, 0.9);
+  padding: 4rem;
+  border-radius: 30px;
+  border: 2px solid #646cff;
+  box-shadow: 0 0 50px rgba(100, 108, 255, 0.4);
+  animation: popIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.end-screen h1 {
+  font-size: 4rem;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.game-over h1 {
+  color: #d00000;
+  text-shadow: 0 0 20px rgba(208, 0, 0, 0.8);
+}
+
+.won h1 {
+  color: #fb8500;
+  text-shadow: 0 0 20px rgba(251, 133, 0, 0.8);
+}
+
+.end-screen h2 {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.play-again-btn {
+  font-size: 1.5rem;
+  padding: 1rem 3rem;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #646cff, #3b2a66);
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 1rem;
+  box-shadow: 0 4px 15px rgba(100, 108, 255, 0.5);
+}
+
+.play-again-btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 20px rgba(100, 108, 255, 0.7);
+}
+
+@keyframes popIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
